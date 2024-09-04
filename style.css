@@ -1,0 +1,454 @@
+@keyframes slide {
+    from
+    {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    } 
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box ;
+    font-family: century;
+    scroll-behavior: smooth;
+}
+
+.baniere .contenu p{
+    font-weight: 300;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+header{
+    position: fixed;
+    top: -20px;
+    left: 0px;
+    padding: 20px 7px;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: 0,5s;
+    background-image: url(image/2.png1.png);
+}
+
+
+.logo-droit a{
+    margin: -250px;
+}
+
+.logo{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 0;
+}
+
+.logo span{
+    color: rgb(237, 3, 3);
+    font-family: century;
+    font-weight: 300;
+    font-size: 2em;
+
+}
+
+.navbar{
+    display: flex;
+    position: relative;
+    margin-right: -200px;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.navbar .btn-commande {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+}
+
+.btn-commande{
+    padding: 10px 20px;
+    background: rgb(237, 3, 3);
+    margin-top: -10px;
+    text-transform: uppercase;
+}
+
+.btn-commande:hover{
+    background-color: rgba(96, 3, 3, 0.788);
+    transition: ease-out;
+}
+header .navbar li a:hover{
+    color: rgb(255, 0, 0);
+    border-bottom: 2px solid;
+}
+
+.baniere{
+    position:relative ;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    background-size: cover;
+}
+
+.baniere .contenu{
+    max-height: 50%;
+    text-align: center;
+
+}
+
+
+.baniere .contenu h2{
+    color: rgb(255, 255, 255);
+    font-size: 2em;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.contenu h2 span{
+    color: rgb(237, 3, 3);
+    font-size: 1.7em;
+    font-weight: 500;
+}
+
+.btn1{
+    font-size: 1em;
+    color: #fff;
+    background: rgba(54, 53, 53, 0.607);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0,5s;
+    margin-left: 10px;
+    border-radius: 7px;
+}
+
+.btn3{
+    font-size: 1em;
+    color: #fff;
+    background-color: rgb(237, 3, 3);
+    padding: 10px 20px;
+    display: inline-block;
+    margin-top: 50px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    transition: 0,5s;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.btn1:hover{
+    letter-spacing: 4px;
+    background-color: rgb(237, 3, 3);
+    transition: ease-out;
+}
+
+.btn2:hover{
+    letter-spacing: 4px;
+}
+
+.btn3:hover{
+    letter-spacing: 4px;
+    background-color: rgb(0, 0, 0);
+    transition: ease-out;
+}
+
+section{
+    padding: 90px;
+}
+
+.row{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+}
+
+.row .nom {
+    position: relative;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.row .nom h2{
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+
+.pp .profil p{
+width: 500px;
+margin-left: 450px;
+margin-top: -180px;
+}
+
+.pp .profil img{
+    height: 200px;
+    aspect-ratio: 1/1;
+    border-radius: 7px;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    position: relative;
+    margin-top: 70px;
+    margin-left: 160px;
+}
+
+
+.titre-texte{
+    color: rgb(0, 0, 0);
+    font-size: 1.7em;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.titre-texte span {
+    color: rgb(237, 3, 3);
+    font-size: 2em;
+    font-weight: 400;
+}
+
+
+.titre{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.boutique{
+    margin-top: 20%;
+    background-color: hwb(0 94% 6% / 0.112);
+}
+
+.boutique .contenue{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    animation: slide linear;
+    animation-timeline: view();
+    animation-range-start: cover 0%;
+    animation-range-end: cover 30%;
+}
+
+.boutique .contenue .box{
+    width: 200px;
+    margin: 25px;
+    border: 7px solid white;
+    box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.boutique .contenue .box .imbox{
+    position: relative;
+    width: 100%;
+    height: 200px;
+}
+
+.boutique .contenue .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.boutique .contenue .box .texte{
+    text-align: center;
+    font-weight: 300;
+    color: black;
+}
+
+.boutique .contenue .box .texte h3{
+    font-weight: 400;
+}
+
+.temoignage{
+    background-color: black;
+    background-size: cover;
+    position: relative;
+}
+
+.temoignage .contenue{
+    display: flex;
+    margin-top: 40px;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.temoignage .contenue .box{
+    width: 300px;
+    margin: 20px;
+    background: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 7px;
+    padding: 40px;
+}
+
+.temoignage .contenue .box .imbox{
+    border-radius: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+}
+
+.temoignage .contenue .box .imbox img{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+.temoignage .contenue .box .texte{
+    text-align: center;
+    color: black;
+    font-style: italic;
+}
+
+.temoignage .contenue .box .texte h3{
+    color: rgb(237, 3, 3);
+    margin-top: 20px;
+    font-size: 1em;
+    font-weight: 600;
+    font-weight: 400;
+}
+
+.temoignage .titre h2 ,.temoignage .titre p{
+    color: #fff;
+}
+
+.contact{
+    background-color: white;
+    background-size: cover;
+    background-position: unset;
+    width: 100%;
+    box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
+    padding: 90px;
+}
+
+.contactform{
+    padding: 20px 20px ;
+    background: #fff;
+    box-shadow: 5px 15px 50px rgba(0, 0, 0, 0.8);
+    max-width: 500px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 28%;
+}
+
+.contactform h3{
+    color: black;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    padding-left: 30%;
+}
+
+.contactform .inputboite{
+    position: relative;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contactform .inputboite input,
+.contact .inputboite textarea 
+{
+    width: 100%;
+    border: 1px solid rgb(0, 0, 0);
+    padding: 10px;
+    color: rgb(237, 3, 3);
+    outline: none;
+    font-size: 16px;
+    font-weight: 300;
+    resize: none;
+}
+
+.contactform .inputboite input[type="submit"] {
+    font-style: 1em;
+    font-weight: 700;
+    color: black;
+    background: rgba(54, 53, 53, 0.306);
+    display: inline-block;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    outline: none;
+    transition: 0,5s;
+    border: none;
+    max-width: 1200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.copyright{
+    padding: 10px 10px;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    background-image: url(image/2.png1.png);
+    text-align: center;
+}
+
+.copyright p:nth-child(1){
+    color: white;
+}
+
+.copyright a{
+    color: rgb(180, 14, 14);
+    text-decoration: none;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.contact .titre-text span{
+    color: rgb(180, 14, 14);
+    font-size: 2em;
+}
+
+.inputboite input[type="submit"]:hover{
+    letter-spacing: 4px;
+    background-color: rgb(180, 14, 14);
+    transition: ease-out;
+    font-style: italic;
+    font-size: small;
+}
